@@ -15,6 +15,7 @@ import React, { Component } from "react";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import Banner from "./Banner";
+import About from "./About";
 
 class App extends Component {
   render() {
@@ -23,6 +24,7 @@ class App extends Component {
         <h1>Just startin out with React</h1>
         <Navbar />
         <Banner />
+        <About />
         <Footer />
       </div>
     );
