@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.first-class {
+  background-color: aquamarine;
+}
+
+.footer-class {
+  background-color: red;
+}
