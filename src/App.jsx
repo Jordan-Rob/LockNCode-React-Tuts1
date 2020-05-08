@@ -17,6 +17,7 @@ import Navbar from "./Navbar";
 import Banner from "./Banner";
 import About from "./About";
 
+/*
 class App extends Component {
   render() {
     return (
@@ -31,4 +32,16 @@ class App extends Component {
   }
 }
 
+export default App;
+*/
+
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <Banner />
+      </div>
+    );
+  }
+}
 export default App;

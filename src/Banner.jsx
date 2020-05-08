@@ -1,3 +1,4 @@
+/*
 import React, { Component } from "react";
 import "./index.css";
 
@@ -18,4 +19,21 @@ class Banner extends Component {
   }
 }
 
+export default Banner;
+*/
+
+import React, { Component } from "react";
+import "./index.css";
+
+class Banner extends Component {
+  render() {
+      return (
+        <div>
+          <button>Click to Increase</button>
+        </div>
+      );
+    };
+
+  }
+}
 export default Banner;
