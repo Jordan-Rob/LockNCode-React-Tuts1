@@ -26,14 +26,27 @@ import React, { Component } from "react";
 import "./index.css";
 
 class Banner extends Component {
-  render() {
-      return (
-        <div>
-          <button>Click to Increase</button>
-        </div>
-      );
+  constructor() {
+    super();
+    this.state = {
+      number: 0,
     };
+  }
 
+  handleClick() {
+    this.setState({
+      number: this.state.number + 1,
+    });
+  }
+
+  render() {
+    return (
+      <div>
+        <h2>{this.state.number}</h2>
+        <button onClick={handleClick}>Click to Increase</button>
+      </div>
+    );
   }
 }
+
 export default Banner;
