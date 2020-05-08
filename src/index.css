@@ -10,3 +10,28 @@
 .footer-class {
   background-color: red;
 }
+
+.button-area {
+  margin-top: 100px;
+  margin-left: 130px;
+  width: 500px;
+  height: 200px;
+  text-align: center;
+  padding: 40px;
+  background-color: #d3d3d3;
+  border-radius: 15px;
+}
+
+.button-area h2 {
+  font-size: 100px;
+}
+
+.button-area button {
+  margin-right: 20px;
+  margin-top: 30px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: blueviolet;
+  color: white;
+}

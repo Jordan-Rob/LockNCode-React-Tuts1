@@ -31,6 +31,8 @@ class Banner extends Component {
     this.state = {
       number: 0,
     };
+    this.handleClick = this.handleClick.bind(this);
+    this.reductionClick = this.reductionClick.bind(this);
   }
 
   handleClick() {
@@ -39,11 +41,20 @@ class Banner extends Component {
     });
   }
 
+  reductionClick() {
+    this.setState({
+      number: this.state.number - 1,
+    });
+  }
+
   render() {
     return (
-      <div>
-        <h2>{this.state.number}</h2>
-        <button onClick={handleClick}>Click to Increase</button>
+      <div className="container">
+        <div className="button-area">
+          <h2>{this.state.number}</h2>
+          <button onClick={this.handleClick}>Click to Increase</button>
+          <button onClick={this.reductionClick}>Click to Decrease</button>
+        </div>
       </div>
     );
   }
