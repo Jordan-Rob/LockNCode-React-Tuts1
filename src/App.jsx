@@ -16,6 +16,8 @@ import Footer from "./Footer";
 import Navbar from "./Navbar";
 import Banner from "./Banner";
 import About from "./About";
+import Banner2 from "./Banner2";
+import Bannerx from "./BannerX";
 
 /*
 class App extends Component {
@@ -35,11 +37,22 @@ class App extends Component {
 export default App;
 */
 
+/*class App extends Component {
+  render() {
+    return (
+      <div>
+        <Banner2 />
+      </div>
+    );
+  }
+}
+export default App;*/
+
 class App extends Component {
   render() {
     return (
       <div>
-        <Banner />
+        <Bannerx />
       </div>
     );
   }
