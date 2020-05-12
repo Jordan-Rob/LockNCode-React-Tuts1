@@ -26,6 +26,7 @@ class Bannerx extends Component {
   render() {
     return (
       <div>
+        <h1>{this.state.username}</h1>
         <label>Userame</label>
         <input
           name="username"

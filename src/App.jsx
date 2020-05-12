@@ -18,6 +18,7 @@ import Banner from "./Banner";
 import About from "./About";
 import Banner2 from "./Banner2";
 import Bannerx from "./BannerX";
+import Bannery from "./BannerY";
 
 /*
 class App extends Component {
@@ -52,7 +53,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Bannerx />
+        <Bannery />
       </div>
     );
   }
