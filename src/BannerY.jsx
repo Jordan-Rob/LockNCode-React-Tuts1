@@ -24,6 +24,7 @@ export default Bannery;*/
 
 //refs
 
+/*
 import React, { Component } from "react";
 class Bannery extends Component {
   constructor() {
@@ -48,3 +49,29 @@ class Bannery extends Component {
   }
 }
 export default Bannery;
+*/
+
+//fetch API
+
+import React, { Component } from "react";
+class Banner extends Component {
+  constructor() {
+    super();
+    this.state = {
+      fetchedData: {},
+    };
+  }
+  componentDidMount() {
+    fetch("https://jsonplaceholder.typicode.com/posts/1/")
+      .then((res) => res.json())
+      .then((data) => {
+        this.setState({
+          fetchedData: data,
+        });
+      });
+  }
+  render() {
+    return <div>{this.state.fetchedData.title}</div>;
+  }
+}
+export default Banner;
