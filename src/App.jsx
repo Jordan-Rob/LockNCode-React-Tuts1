@@ -19,6 +19,8 @@ import About from "./About";
 import Banner2 from "./Banner2";
 import Bannerx from "./BannerX";
 import Bannery from "./BannerY";
+import File from "./FileA";
+import { Providor } from "./Context";
 
 /*
 class App extends Component {
@@ -53,7 +55,9 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Bannery />
+        <Providor value="Hello Everyone">
+          <File />
+        </Providor>
       </div>
     );
   }
